@@ -1,0 +1,137 @@
+# Java Platformasi Haqida To‘liq Ma’lumot
+
+Java Platformasi — Sun Microsystems (hozirda Oracle korporatsiyasi tomonidan boshqariladi) tomonidan ishlab chiqilgan dasturlash tili va ishga tushirish muhitidir. U platformadan mustaqil ishlash imkoniyati, keng qamrovli API’lar va turli sohalarda qo‘llanilishi bilan mashhur. Java platformasi dasturlarni ishlab chiqish, sinovdan o‘tkazish va ishga tushirish uchun zarur bo‘lgan vositalar, kutubxonalar va muhitni o‘z ichiga oladi. Quyida Java platformasining asosiy xususiyatlari, tuzilishi va foydalanish sohalari haqida batafsil ma’lumot keltirilgan.
+
+---
+
+## Java Platformasi Nima?
+
+Java Platformasi — bu Java dasturlash tiliga asoslangan dasturiy ta’minot va apparat muhitini anglatadi. U dasturlarni platformadan mustaqil tarzda ishlashini ta’minlaydi, ya’ni bir marta yozilgan Java kodi turli operatsion tizimlarda (Windows, Linux, macOS, va boshqalar) o‘zgartirishsiz ishlay oladi. Bu "Write Once, Run Anywhere" (WORA) prinsipi deb ataladi.
+
+Java platformasi quyidagi asosiy komponentlardan iborat:
+- **Java Virtual Machine (JVM)**: Java kodini bajaradigan virtual mashina.
+- **Java Runtime Environment (JRE)**: JVM va asosiy kutubxonalarni o‘z ichiga oladi, ilovalarni ishga tushirish uchun ishlatiladi.
+- **Java Development Kit (JDK)**: Dastur ishlab chiqish uchun vositalar to‘plami (kompilyator, debugger va boshqalar).
+- **API’lar va kutubxonalar**: Foydalanuvchi interfeyslari, tarmoq, ma’lumotlar bazasi va boshqa funksiyalar uchun tayyor kutubxonalar.
+
+---
+
+## Java Platformasining Asosiy Komponentlari
+
+### 1. **Java Virtual Machine (JVM)**
+- JVM — Java platformasining yuragi bo‘lib, Java bayt-kodini (kompilyatsiya qilingan .class fayllari) mashina tiliga aylantiradi va uni operatsion tizimda ishga tushiradi.
+- **Xususiyatlari**:
+  - Platformadan mustaqillik: JVM tufayli Java kodi har qanday qurilmada ishlay oladi.
+  - **Garbage Collection**: Foydalanilmayotgan xotirani avtomatik boshqarish.
+  - **Just-In-Time (JIT) Compiler**: Kodni tezroq bajarish uchun optimallashtirish.
+- Har bir operatsion tizim va apparat uchun alohida JVM talab qilinadi.
+
+### 2. **Java Runtime Environment (JRE)**
+- JRE — Java ilovalarini ishga tushirish uchun zarur bo‘lgan muhit. U JVM va asosiy Java kutubxonalarini o‘z ichiga oladi.
+- **Foydalanish**: Faqat Java ilovalarini ishga tushirish kerak bo‘lsa, JRE yetarli.
+- **Eslatma**: JRE dastur ishlab chiqish uchun emas, faqat tayyor ilovalarni ishlatish uchun mo‘ljallangan.
+
+### 3. **Java Development Kit (JDK)**
+- JDK — dasturchilar uchun asosiy vosita to‘plami. U JRE’ni o‘z ichiga oladi va qo‘shimcha ravishda quyidagilarni taqdim etadi:
+  - **javac**: Java kodini bayt-kodga kompilyatsiya qiluvchi kompilyator.
+  - **java**: Bayt-kodni ishga tushiruvchi vosita.
+  - **javadoc**: Kod uchun hujjatlar yaratish vositasi.
+  - **jar**: Java ilovalarini arxivlash uchun vosita.
+- **OpenJDK**: JDK’ning ochiq manbali versiyasi, bepul foydalanish uchun mavjud.
+
+### 4. **Java API’lar va Kutubxonalar**
+- Java platformasi keng qamrovli standart kutubxonalar (Java Class Library) bilan ta’minlaydi. Masalan:
+  - **java.lang**: Asosiy sinflar (String, Math, va boshqalar).
+  - **java.util**: Ma’lumotlar tuzilmalari (List, Map, Set).
+  - **java.io**: Fayl va tarmoq operatsiyalari.
+  - **java.net**: Tarmoq dasturlash.
+  - **javax.swing va JavaFX**: Grafik interfeyslar ishlab chiqish.
+  - **java.sql**: Ma’lumotlar bazasi bilan ishlash.
+
+---
+
+## Java Platformasining Nashrlari
+
+Java platformasi turli ehtiyojlarni qondirish uchun uchta asosiy nashrga bo‘linadi:
+
+### 1. **Java SE (Standard Edition)**
+- **Maqsad**: Umumiy dasturlash, desktop va kichik server ilovalari.
+- **Foydalanish**:
+  - Desktop ilovalari (masalan, Eclipse, IntelliJ IDEA).
+  - Konsol ilovalari.
+  - Kichik server ilovalari.
+- **Asosiy komponentlar**: JDK, JRE, JVM, Swing, JavaFX.
+- **Versiyalar**: 2025-yil holatiga ko‘ra, Java SE 21 (LTS) va undan keyingi qisqa muddatli versiyalar.
+- **Litsenziya**: OpenJDK bepul, Oracle JDK esa kommerstsial foydalanish uchun pullik bo‘lishi mumkin.
+
+### 2. **Java EE (Enterprise Edition) / Jakarta EE**
+- **Maqsad**: Yirik, ko‘p foydalanuvchili korporativ ilovalar.
+- **Foydalanish**:
+  - Veb-ilovalar (onlayn do‘konlar, bank tizimlari).
+  - API va mikro-xizmatlar.
+  - Ma’lumotlar bazasi integratsiyasi.
+- **Asosiy komponentlar**: Servlets, JSP, EJB, JPA, JMS, REST, SOAP.
+- **Serverlar**: Apache Tomcat, WildFly, GlassFish.
+- **Versiyalar**: Jakarta EE 10 (2025-yil holatiga ko‘ra).
+
+### 3. **Java ME (Micro Edition)**
+- **Maqsad**: Resurslari cheklangan qurilmalar (eski mobil telefonlar, IoT).
+- **Foydalanish**:
+  - J2ME o‘yinlari.
+  - IoT va o‘rnatilgan tizimlar.
+- **Asosiy komponentlar**: CLDC, CDC, MIDP.
+- **Eslatma**: Hozirda Android va iOS tufayli eskirgan.
+
+### Qo‘shimcha Nashrlar
+- **Java Card**: Aqlli kartalar (kredit kartalari, SIM-kartalar) uchun.
+- **JavaFX**: Zamonaviy GUI ishlab chiqish uchun (Java SE ichida).
+
+---
+
+## Java Platformasining Afzalliklari
+
+1. **Platformadan Mustaqillik**: "Write Once, Run Anywhere" tufayli Java kodi turli qurilma va operatsion tizimlarda ishlaydi.
+2. **Keng Qo‘llab-quvvatlash**: Katta hamjamiyat, ko‘plab kutubxonalar va resurslar.
+3. **Mustahkamlik**: Xatolarni boshqarish va xavfsizlik tizimlari kuchli.
+4. **Kengaytirilishi**: Turli sohalarda (desktop, veb, mobil, IoT) ishlatilishi mumkin.
+5. **Ochiq Manba**: OpenJDK orqali bepul foydalanish imkoniyati.
+
+---
+
+## Foydalanish Sohalari
+
+Java platformasi turli sohalarda keng qo‘llaniladi:
+- **Desktop Ilovalari**: IDE’lar (Eclipse, IntelliJ), media pleerlar.
+- **Veb-Ilovalar**: Bank tizimlari, onlayn do‘konlar, API’lar.
+- **Mobil Ilovalar**: Android dasturlari (garchi Kotlin afzal bo‘lsa ham).
+- **Korporativ Tizimlar**: ERP, CRM, ma’lumotlar bazasi boshqaruvi.
+- **IoT va O‘rnatilgan Tizimlar**: Sensorlar va kichik qurilmalar.
+- **O‘yinlar**: Minecraft kabi mashhur o‘yinlar Java’da yozilgan.
+
+---
+
+## Hozirgi Holat (2025-yil)
+
+- **Java SE**: Eng ko‘p foydalaniladigan nashr, Java 21 (LTS) va keyingi versiyalar faol ishlatilmoqda.
+- **Jakarta EE**: Korporativ ilovalar uchun muhim, lekin Spring Framework bilan raqobatlashmoqda.
+- **Java ME**: Android va iOS tufayli deyarli foydalanilmaydi.
+- **OpenJDK**: Ochiq manbali muqobil sifatida keng tarqalgan.
+- **Litsenziya**: Oracle JDK kommerstsial foydalanish uchun pullik bo‘lishi mumkin, OpenJDK esa bepul.
+
+---
+
+## O‘zbekistonda Java Platformasi
+
+O‘zbekistonda Java platformasi quyidagi sohalarda faol qo‘llaniladi:
+- **Ta’lim**: Universitetlar va o‘quv markazlarida Java SE o‘quv dasturlari uchun ishlatiladi.
+- **Bank Sektori**: Java EE (Jakarta EE) bank tizimlari va tranzaksiya platformalarida keng tarqalgan.
+- **Startaplar va IT Kompaniyalar**: Veb-ilovalar va API’lar ishlab chiqishda foydalaniladi.
+- **Android Dasturlash**: Java Android ilovalarida ishlatilsa-da, Kotlin’ga o‘tish tendensiyasi kuchaymoqda.
+
+---
+
+## Xulosa
+
+Java Platformasi — bu ko‘p qirrali, mustahkam va platformadan mustaqil dasturlash muhiti bo‘lib, turli sohalarda keng qo‘llaniladi. Uning Java SE, Jakarta EE va Java ME kabi nashrlari har xil ehtiyojlarni qondiradi. Hozirgi kunda Java SE va Jakarta EE faol rivojlanmoqda, Java ME esa eskirgan. OpenJDK kabi ochiq manbali muqobillar Java’ning kelajagini yanada ochiq va moslashuvchan qilmoqda.
+
+> **Eslatma**: Agar sizga Java platformasining ma’lum bir jihati (masalan, JVM, API’lar yoki misollar) bo‘yicha chuqurroq ma’lumot kerak bo‘lsa, iltimos, aniq so‘rov yuboring!

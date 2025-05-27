@@ -1,4 +1,4 @@
-# Java Nashrlari (Editions) Haqida To‘liq Ma’lumot
+# `Java Editions` Haqida To‘liq Ma’lumot
 
 Java dasturlash tilining turli nashrlari umumiy dasturlashdan tortib korporativ va mobil ilovalargacha bo‘lgan keng doiradagi ehtiyojlarni qondirish uchun mo‘ljallangan. Java platformasi uchta asosiy nashrga bo‘linadi: **Java SE**, **Java EE** (hozirda Jakarta EE), va **Java ME**. Quyida ularning har biri haqida batafsil ma’lumot keltirilgan.
 

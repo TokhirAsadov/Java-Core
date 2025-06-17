@@ -5,8 +5,8 @@
 3. Stringdagi unli harflar sonini hisoblaydigan rekursiv funksiya yozing.
 4. Stringdagi bir belgini boshqa belgi bilan almashtiruvchi rekursiv funksiya tuzing.
 5. len() yoki sikllardan foydalanmasdan string uzunligini topuvchi rekursiv funksiya yozing.
-6. Ikkita string bir-birining anagrammasi ekanligini tekshiruvchi rekursiv funksiya yarating.
-7. Berilgan stringning barcha mumkin bo‘lgan pastki qatorlarini generatsiya qiluvchi rekursiv funksiya tuzing.
+6. Ikkita string bir-birining anagrammasi ekanligini tekshiruvchi rekursiv funksiya yarating. Ikkita string bir-birining anagrammasi bo‘lishi uchun ular bir xil belgilarni bir xil sonlarda, lekin har xil tartibda o‘z ichiga olgan bo‘lishi kerak.
+7. Berilgan stringning barcha mumkin bo‘lgan pastki qatorlari (substring)ni generatsiya qiluvchi rekursiv funksiya tuzing.
 8. Stringdagi so‘zlar sonini (bo‘shliq bilan ajratilgan) hisoblaydigan rekursiv funksiya yozing.
 9. Stringdagi har bir so‘zning birinchi harfini katta qiluvchi rekursiv funksiya tuzing.
 10. Stringdagi takrorlanuvchi belgilarni olib tashlaydigan va tartibni saqlovchi rekursiv funksiya yarating.
@@ -24,9 +24,9 @@
 22. Bir string ikkinchi stringning pastki ketma-ketligi ekanligini tekshiruvchi rekursiv funksiya tuzing.
 23. Stringdagi katta va kichik harflar sonini hisoblaydigan rekursiv funksiya yozing.
 24. Ikkita stringni bir-biriga aralashtiruvchi rekursiv funksiya tuzing (masalan, "abc" va "def" → "adbecf").
-25. String takrorlanuvchi pastki qator orqali shakllantirilishi mumkinligini tekshiruvchi rekursiv funksiya yarating.
-26. Stringdagi bir pastki qatorni boshqa pastki qator bilan almashtiruvchi rekursiv funksiya yozing.
-27. Stringni palindromlarga bo‘lish uchun zarur bo‘lgan minimal kesishlar sonini topuvchi rekursiv funksiya tuzing.
+25. String takrorlanuvchi pastki qator orqali shakllantirilishi mumkinligini tekshiruvchi rekursiv funksiya yarating. Berilgan string biror qisqa pastki qator (substring) bir necha marta takrorlanib, to‘liq stringni hosil qilganmi — shuni tekshiramiz
+26. Stringdagi bir pastki qatorni boshqa pastki qator bilan almashtiruvchi rekursiv funksiya yozing. Berilgan original string ichida topilgan biror pastki qatorni (target) boshqa pastki qator (replacement) bilan rekursiv tarzda hamma paydo bo‘lish joylarida almashtirish kerak.
+27. Stringni palindromlarga bo‘lish uchun zarur bo‘lgan minimal kesishlar sonini topuvchi rekursiv funksiya tuzing. Palindrom — o‘zini o‘qishda bir xil bo‘lgan string ("aba", "racecar", "a"). Siz stringni shunday bo‘lishingiz kerakki, har bir bo‘lak palindrom bo‘lsin.
 28. Raqamlar qatoridan barcha mumkin bo‘lgan to‘g‘ri IP manzillarni generatsiya qiluvchi rekursiv funksiya yarating.
 29. Qavslar bilan kodlangan stringni dekod qiluvchi rekursiv funksiya yarating (masalan, "3[a]2[bc]" → "aaabcbc").
 ```

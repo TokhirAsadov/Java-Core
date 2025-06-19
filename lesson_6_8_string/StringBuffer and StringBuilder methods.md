@@ -249,4 +249,4 @@ System.out.println(sbf.capacity()); // Natija: 4
 ```
 
 ## Xulosa
-`StringBuilder` va `StringBuffer` sinflari satrlar bilan ishlashda samarali va moslashuvchan vositalardir. `StringBuilder` bir oqimli (single-threaded) muhitda tezroq ishlaydi, `StringBuffer` esa ko'p oqimli (multithreaded) muhitda xavfsiz. Yuqoridagi metodlar ularning asosiy funksionalligini qamrab oladi va har bir misol ularning qanday ishlatilishini ko'rsatadi.
+`StringBuilder` va `StringBuffer` sinflari satrlar bilan ishlashda samarali va moslashuvchan vositalardir. `StringBuilder` bir oqimli (single-threaded) muhitda tezroq ishlaydi, `StringBuffer` esa ko'p oqimli (multithreaded) muhitda xavfsiz.

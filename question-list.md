@@ -90,3 +90,7 @@
 * Java-da Formatting nima ?
 * String classni format() method javani nechinchi versiyasida taqdim etilgan ?
 * '%s' belgisini nima uchun ishlatamiz ?
+* Programming Principles nima?
+* Qanday qilib effective code yozasiz?
+* DRY nima?
+* KISS nima?

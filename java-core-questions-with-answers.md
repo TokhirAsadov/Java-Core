@@ -52,7 +52,7 @@ Java'da tokenlar 5 ta asosiy turga bo'linadi: kalit so'zlar, identifikatorlar, l
 Java'da Character Set - bu Java dasturlarida ishlatiladigan belgilarni ifodalash uchun ishlatiladigan Unicode standartidir.
 
 ## Identifiers nima va Identifiers qoidalari?
-Identifiers - o'zgaruvchilar, metodlar yoki sinflarga berilgan nomlar. Qoidalar: harf yoki pastki chiziq (_) bilan boshlanishi kerak, raqam bilan boshlanmaydi, kalit so'z bo'lmasligi kerak va Unicode belgilarni qo'llab-quvvatlaydi.
+Identifiers - o'zgaruvchilar, metodlar yoki classlarga berilgan nomlar. Qoidalar: harf yoki pastki chiziq (_) bilan boshlanishi kerak, raqam bilan boshlanmaydi, kalit so'z bo'lmasligi kerak va Unicode belgilarni qo'llab-quvvatlaydi.
 
 ## Java-da nechi xil turdagi commentlar bor?
 Java'da 3 xil comment turi mavjud: bir qatorli (`//`), ko'p qatorli (`/* */`) va dokumentatsiya (`/** */`).
@@ -64,37 +64,37 @@ Java'da 57 ta kalit so'z (keyword) mavjud, masalan, `class`, `int`, `if`, `for` 
 Java'da 3 turdagi o'zgaruvchilar mavjud: local, instance va static.
 
 ## Java-da primative type bilan non-primative nima farqi bor?
-Primitive tiplar (`int`, `double`, `boolean`) - oddiy ma'lumot turlari, xotirada to'g'ridan-to'g'ri saqlanadi. Non-primitive tiplar (`String`, `Array`, sinflar) - ob'ektlarga ishora qiladi va xotirada reference sifatida saqlanadi.
+Primitive tiplar (`int`, `double`, `boolean`) - oddiy ma'lumot turlari, xotirada to'g'ridan-to'g'ri saqlanadi. Non-primitive tiplar (`String`, `Array`, classlar) - ob'ektlarga ishora qiladi va xotirada reference sifatida saqlanadi.
 
 ## Variable scope nima?
-Variable scope - o'zgaruvchining dastur ichida ko'rinadigan yoki ishlatiladigan sohasi (masalan, metod ichida yoki sinf ichida).
+Variable scope - o'zgaruvchining dastur ichida ko'rinadigan yoki ishlatiladigan sohasi (masalan, metod ichida yoki class ichida).
 
 ## Java-da qancha scopelar mavjud?
 Java'da 3 ta asosiy scope mavjud: local scope, instance scope va class (static) scope.
 
 ## Java-ni nechinchi versiyasidan Scanner qo'shilgan?
-`Scanner` sinfi Java 1.5 (JDK 5) versiyasida qo'shilgan.
+`Scanner` classi Java 1.5 (JDK 5) versiyasida qo'shilgan.
 
 ## Scanner class qanday resourcelardan ma'lumotlarni o'qiy oladi?
 `Scanner` klaviatura (System.in), fayllar, stringlar va boshqa input stream'lardan ma'lumot o'qiydi.
 
 ## Java-da nechi xil turdagi data type bor?
-Java'da 2 turdagi data tiplari mavjud: primitive (8 ta: `byte`, `short`, `int`, `long`, `float`, `double`, `char`, `boolean`) va non-primitive (sinflar, interfeyslar, massivlar).
+Java'da 2 turdagi data tiplari mavjud: primitive (8 ta: `byte`, `short`, `int`, `long`, `float`, `double`, `char`, `boolean`) va non-primitive (classlar, interfeyslar, massivlar).
 
 ## Scanner bug?
-`Scanner` sinfida ma'lum "bug"lar mavjud, masalan, `nextLine()` metodi oldingi `nextInt()` yoki `next()` dan keyin qoldiq newline belgisini o'qishi mumkin, bu noto'g'ri inputga olib keladi.
+`Scanner` classida ma'lum "bug"lar mavjud, masalan, `nextLine()` metodi oldingi `nextInt()` yoki `next()` dan keyin qoldiq newline belgisini o'qishi mumkin, bu noto'g'ri inputga olib keladi.
 
 ## Console class nima?
-`Console` sinfi - foydalanuvchi bilan terminal orqali o'zaro aloqa qilish uchun ishlatiladigan sinf, masalan, parol kiritish yoki formatlangan chiqish uchun.
+`Console` classi - foydalanuvchi bilan terminal orqali o'zaro aloqa qilish uchun ishlatiladigan class, masalan, parol kiritish yoki formatlangan chiqish uchun.
 
 ## Javani nechinchi versiyasida Console taqdim etilgan?
-`Console` sinfi Java 1.6 (JDK 6) da taqdim etilgan.
+`Console` classi Java 1.6 (JDK 6) da taqdim etilgan.
 
 ## Scanner va Console o'rtasidagi farq?
 `Scanner` umumiy ma'lumot o'qish uchun, `Console` esa terminalga xos operatsiyalar (masalan, parol kiritish) uchun ishlatiladi. `Console` faqat terminal muhitida ishlaydi.
 
 ## Scanner class va undan foydalanish
-`Scanner` sinfi foydalanuvchi kiritgan ma'lumotlarni o'qish uchun ishlatiladi. Misol:
+`Scanner` classi foydalanuvchi kiritgan ma'lumotlarni o'qish uchun ishlatiladi. Misol:
 
 ```java
 import java.util.Scanner;
@@ -188,7 +188,7 @@ ANSI escape code - terminalda rang, format yoki kursor harakatini boshqarish uch
 Function - ma'lum bir vazifani bajaradigan kod bloki bo'lib, ko'pincha boshqa tillarda ishlatiladigan atama.
 
 ## Function va Method o'rtasidagi farq nima?
-Method - sinf ichida aniqlangan funksiya. Function esa umumiy atama bo'lib, sinfdan tashqarida ham ishlatilishi mumkin.
+Method - class ichida aniqlangan funksiya. Function esa umumiy atama bo'lib, classdan tashqarida ham ishlatilishi mumkin.
 
 ## Method Definition nima?
 Method Definition - metodning to'liq ta'rifi: header (imzo) va body (kod bloki).
@@ -221,7 +221,7 @@ Rekursiyalar guruhlari: to'g'ridan-to'g'ri (direct) va bilvosita (indirect) reku
 Rekursiya turlari: linear, tail, binary, mutual va nested recursion.
 
 ## Java-da String nima?
-`String` - Java'da belgilar ketma-ketligini ifodalovchi sinf.
+`String` - Java'da belgilar ketma-ketligini ifodalovchi class.
 
 ## Java-da String ni nechi xil usulda yaratishimiz mumkin?
 `String`ni 2 usulda yaratish mumkin: literal (`"Hello"`) va `new String()` konstruktor yordamida.
@@ -230,7 +230,7 @@ Rekursiya turlari: linear, tail, binary, mutual va nested recursion.
 `String` immutable, chunki uning qiymati o'zgartirilmaydi, bu xavfsizlik va optimallashtirish uchun muhim.
 
 ## Java-da String classning superclassni nima?
-`String` sinfining superclass'i `Object`.
+`String` classining superclass'i `Object`.
 
 ## Array nima?
 Array - bir xil turdagi ma'lumotlarni saqlash uchun ishlatiladigan ma'lumotlar tuzilmasi.
@@ -316,7 +316,7 @@ String s4 = "Scientech";
 3 ta ob'ekt: `"Scientech"` (String Pool'da), `s1` va `s2` uchun alohida heap'da.
 
 ## String class qanday interfacelardan implement olgan?
-`String` sinfi `Serializable`, `Comparable`, `CharSequence` interfeyslarini implement qiladi.
+`String` classi `Serializable`, `Comparable`, `CharSequence` interfeyslarini implement qiladi.
 
 ## String Thread-safe mi?
 Ha, `String` immutable bo'lgani uchun thread-safe.
@@ -326,7 +326,7 @@ Ha, `String` immutable bo'lgani uchun thread-safe.
 - Ko'p string operatsiyalari xotirani ko'p ishlatadi
 
 ## String wrapper classmi?
-Yo'q, `String` wrapper sinf emas, lekin `Character` wrapper sinf hisoblanadi.
+Yo'q, `String` wrapper class emas, lekin `Character` wrapper class hisoblanadi.
 
 ## String intern() method nima uchun ishlatiladi?
 `intern()` String Pool'dagi stringga ishora qilish uchun ishlatiladi, xotirani tejaydi.
